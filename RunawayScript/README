@@ -1,0 +1,11 @@
+xrunawaycheck.py
+Scans a defined set of hosts for processes that are potentially detrimental to others.
+Written by Will Hopper 
+3/7/2012
+
+
+Usage:
+
+Full scan:      --full
+Single scan:    --mini
+
