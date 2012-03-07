@@ -37,10 +37,8 @@ class analyzer(object):
     print 'Warning: High Load Average'
     print 'Machine: %s' % self.host
     print "             CPU    %usr   %nice    %sys  %iowait   %irq   %soft   %steal  %guest  %idle"
-    subprocess.call(["cat runtemp.txt"], shell=True) 
-    subprocess.call(['echo "Users:"'], shell=True)
-    subprocess.call(['echo " "'], shell=True) 
-    subprocess.call(["ssh whopper@%s 'who | sort'" % self.host], shell=True)
+    subprocess.call(['cat runtemp.txt && echo "Users:" && echo " "\
+     && ssh whopper@%s "who | sort"' % self.host], shell=True) 
     print '_______________________________________________________________________' 
 
 
