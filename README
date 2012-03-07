@@ -1,0 +1,6 @@
+CAT scripts
+Written by Will Hopper
+(at various times)
+
+printccheck.py    - script to test a defined set of printers
+runawaycheck.py   - script to scan hosts for potential runaway processes
